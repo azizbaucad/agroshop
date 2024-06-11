@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <>
       <header className="bg-white">
-        <div className="bg-white absolute h-20 w-full flex p-4">
+        <div className="bg-white h-20 w-full flex p-4">
           <div className="flex mr-auto md:w-auto flex-shrink-0">
             <img className="h-8 md:h-10" src="https://i.ibb.co/98pHdFq/2021-10-27-15h51-15.png" alt="" />
             <div className="ml-auto md:w-48 hidden sm:flex flex-col place-items-end">
