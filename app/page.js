@@ -3,7 +3,7 @@ import SideNavbar from "./components/SideNavbar";
 import Header from "./components/Header";
 import LeftColumn from "./components/LeftColumn";
 import RightColumn from "./components/RightColumn";
-import Welcome from "./components/PerformanceChart";
+import Welcome from "./components/Welcome";
 import Category from "./components/category";
 import Product from "./components/Product";
 

@@ -1,19 +1,32 @@
 "use client";
 import React from 'react'
+import Image from 'next/image';
+import cereale from '@/src/images/cereale.jpg';
 
 export default function Category() {
     return (
-        <div className='text-gray-800 text-left h-[530px]'>
+        <div className='relative text-gray-800 text-left h-[700px]'>
             <div className='pb-1'>
                 <p className='text-xl font-semibold text-center mt-10 text-gray-800'>Reliable, efficient delivery</p>
                 {/* <p className='text-xl font-semibold text-center mt-0'>Powered by Nexus AI</p> */}
                 <p className='text-xl font-hairline text-center mt-3 my-4 mx-10 xl:px-64 xl:mx-48 md:px-48 text-gray-800'>Our Agro Businees Plateform that you nedd to sell and buy your local agricol product</p>
             </div>
             <div className='grid xl:grid-cols-3 grid-cols-1 xl:mx-32 mx-10 gap-8 my-4 grid-rows-4 md:grid-cols-2'>
-                <div className='bg-white border-t-4 border-red-600 md:col-1 md:row-start-3 md:row-end-5 rounded-md shadow-sm py-6 pl-8 pr-16 relative col-2 xl:row-start-1 xl:row-end-3'>
+                <div className='bg-white border-t-4 border-red-600 md:col-1 md:row-start-3 md:row-end-5 rounded-md shadow-none py-6 pl-8 pr-16 relative col-2 xl:row-start-1 xl:row-end-3'>
                     <p className='font-semibold text-xl'>Nos cereales</p>
-                    <p className='text-gray-600 mt-2 leading-2 mb-24'>Découvrez nos céréales bio savoureuses et nutritives</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" class="absolute bottom-0 right-0 mb-6 mr-6">
+                    <p className='text-gray-600 mt-2 leading-2 mb-4'>Découvrez nos céréales bio savoureuses et nutritives</p>
+                    <Image
+                        className='w-full h-20 object-cover rounded-t-lg'
+                        src={cereale}
+                        alt='Cereale'
+                        layout='responsive'
+                        width={500}
+                        height={500}
+                    />
+                    <div className='flex mt-2 mb-2 mr-2 w-full'>
+                        <h5 className='absolute bg-gray-800 justify-end items-end rounded-none text-sm font-semibold text-white bottom-0 right-0 mt-4 mb-2 mr-3 p-2'>View More</h5>
+                    </div>
+                    {/* <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" class="absolute bottom-0 right-0 mb-6 mr-6">
                         <g fill="none">
                             <path fill="#EFEFF4" d="M64 14.454v41.788H0V14.454l3.75-3.787h56.5z" />
                             <path fill="#DADAE5" d="M64 14.454v41.788H32V10.667h28.25z" />
@@ -31,13 +44,29 @@ export default function Category() {
                             <path fill="#676E74" d="M50.424 45.779l-2.452 2.706-15.487-13.526-15.488 13.526-2.452-2.706 17.94-15.718z" />
                             <path fill="#474F54" d="M32 30.061l18.424 15.718-2.518 2.706L32 34.959z" />
                         </g>
-                    </svg>
+                    </svg> */}
                 </div>
+                
 
-                <div className='bg-white border-t-4 border-green-400 md:col-1 md:row-start-3 md:row-end-5 rounded-md shadow-sm py-6 pl-8 pr-16 relative col-2 xl:row-start-1 xl:row-end-3'>
-                    <p className='font-semibold text-xl'>Nos legumes</p>
-                    <p className='text-gray-600 mt-2 leading-2 mb-24'>Commandez dès aujourd'hui et savourez la différence de nos légumes bio</p><svg xmlns='http://www.w3.org/2000/svg' width='64' height='64' className='absolute bottom-0 right-0 mb-6 mr-6'>
-                        <g fill='none'>
+                <div className='bg-white border-t-4 border-green-400 md:col-1 md:row-start-3 md:row-end-5 rounded-md shadow-none py-6 pl-8 pr-16 relative col-2 xl:row-start-1 xl:row-end-3'>
+                    <div className='relative'>
+                        <p className='font-semibold text-xl'>Nos legumes</p>
+                        <p className='text-gray-600 mt-2 leading-2 mb-4'>Commandez dès aujourd'hui et savourez la différence de nos légumes bio</p>
+                        <Image
+                            className='w-full h-20 object-cover rounded-t-lg'
+                            src={cereale}
+                            alt='Cereale'
+                            layout='responsive'
+                            width={500}
+                            height={500}
+                        />
+                    </div>
+                    <div className='flex mt-2 mb-2 mr-2 w-full'>
+                        <h5 className='absolute bg-gray-800 justify-end items-end rounded-none text-sm font-semibold text-white bottom-0 right-0 mt-4 mb-2 mr-3 p-2'>View More</h5>
+                    </div>
+
+                    {/* <svg xmlns='http://www.w3.org/2000/svg' width='64' height='64' className='absolute bottom-0 right-0 mb-6 mr-6'>
+                    <g fill='none'>
                             <path fill="#676E74" d="M56.842 7.158c-9.526-9.563-24.902-9.525-34.428 0-8.025 8.026-9.45 20.44-3.525 30.003l-2.513 2.55-1.356 6.144 4.214 4.214 5.093-2.408 2.512-2.55a24.254 24.254 0 0030.003-3.525c9.563-9.526 9.525-24.902 0-34.428z" />
                             <path fill="#474F54" d="M24.327 47.661l2.512-2.55a24.254 24.254 0 0030.003-3.525c9.563-9.526 9.525-24.902 0-34.428l-40.26 40.26 2.652 2.651 5.093-2.408z" />
                             <path fill="#64E1DC" d="M54.213 9.787a20.56 20.56 0 00-14.585-6.041C28.236 3.746 19 12.98 19 24.372a20.564 20.564 0 006.041 14.586 20.564 20.564 0 0014.586 6.04c11.392 0 20.626-9.234 20.626-20.626a20.56 20.56 0 00-6.041-14.585z" />
@@ -51,14 +80,27 @@ export default function Category() {
                             <path fill="#575C60" d="M20.333 43.667l-3.957-3.957L0 56.049l3.975 3.976L7.951 64l16.376-16.339z" />
                             <path fill="#333637" d="M24.327 47.661l-3.994-3.994L3.975 60.025 7.951 64z" />
                         </g>
-                    </svg>
+                    </svg> */}
 
                 </div>
 
-                <div className='bg-white border-t-4 border-yellow-500 md:col-1 md:row-start-3 md:row-end-5 rounded-md shadow-sm py-6 pl-8 pr-16 relative col-2 xl:row-start-1 xl:row-end-3'>
-                    <p className='font-semibold text-xl'>Nos Fruits</p>
-                    <p className='text-gray-600 mt-2 leading-2 mb-24'>Savourez la fraîcheur de nos fruits bio</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" class="absolute bottom-0 right-0 mb-6 mr-6">
+                <div className='bg-white border-t-4 border-yellow-500 md:col-1 md:row-start-3 md:row-end-5 rounded-md shadow-none py-6 pl-8 pr-16 relative col-2 xl:row-start-1 xl:row-end-3'>
+                    <div className='relative'>
+                        <p className='font-semibold text-xl'>Nos Fruits</p>
+                        <p className='text-gray-600 mt-2 leading-2 mb-4'>Savourez la fraîcheur de nos fruits bio</p>
+                        <Image
+                            className='w-full h-20 object-cover rounded-t-lg'
+                            src={cereale}
+                            alt='Cereale'
+                            layout='responsive'
+                            width={500}
+                            height={500}
+                        />
+                    </div>
+                    <div className='flex mt-2 mb-2 mr-2 w-full'>
+                        <h5 className='absolute bg-gray-800 justify-end items-end rounded-none text-sm font-semibold text-white bottom-0 right-0 mt-4 mb-2 mr-3 p-2'>View More</h5>
+                    </div>
+                    {/* <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" class="absolute bottom-0 right-0 mb-6 mr-6">
                         <g fill="none">
                             <path fill="#676E74" d="M26.375 52.625h11.25V64h-11.25z" />
                             <path fill="#333637" d="M32 52.625h5.625V64H32z" />
@@ -82,7 +124,7 @@ export default function Category() {
                             <path fill="#FFDA2D" d="M30.125 18.875h3.75v3.75h-3.75z" />
                             <path fill="#FDBF00" d="M32 18.875h1.875v3.75H32z" />
                         </g>
-                    </svg>
+                    </svg> */}
 
 
                 </div>
